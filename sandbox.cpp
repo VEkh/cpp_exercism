@@ -1,3 +1,11 @@
+#include <iostream>
+#include <regex>
 #include <string>
 
-int main() { std::printf("Duhhh hello\n"); }
+int main() {
+  std::regex r("[a-z]");
+
+  if (std::regex_match(std::string(1, 'f'), r)) {
+    std::cout << "matches\n";
+  }
+}
