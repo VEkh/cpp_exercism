@@ -2,10 +2,4 @@
 #include <regex>
 #include <string>
 
-int main() {
-  std::regex r("[a-z]");
-
-  if (std::regex_match(std::string(1, 'f'), r)) {
-    std::cout << "matches\n";
-  }
-}
+int main() { std::cout << 1996 % 100 << "\n"; }
