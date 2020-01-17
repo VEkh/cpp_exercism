@@ -1,0 +1,5 @@
+#!/bin/bash
+
+gcc -o ./.sandbox ./sandbox.cpp &&
+  ./.sandbox &&
+  \rm .sandbox
