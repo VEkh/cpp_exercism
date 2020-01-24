@@ -1,6 +1,10 @@
 #include <iostream>
+#include <map>
+#include <vector>
 
 int main() {
-  int giga = static_cast<int>(1.0e9);
-  std::cout << giga << "\n";
+  std::vector<char> letters = {'A', 'E', 'I', 'O', 'U',
+                               'L', 'N', 'R', 'S', 'T'};
+
+  std::cout << letters.size() << std::endl;
 }
