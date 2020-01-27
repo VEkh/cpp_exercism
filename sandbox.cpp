@@ -1,10 +1,4 @@
 #include <iostream>
-#include <map>
-#include <vector>
+#include <math.h>
 
-int main() {
-  std::vector<char> letters = {'A', 'E', 'I', 'O', 'U',
-                               'L', 'N', 'R', 'S', 'T'};
-
-  std::cout << letters.size() << std::endl;
-}
+int main() { std::cout << pow(2, 2) << std::endl; }
