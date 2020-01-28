@@ -1,4 +1,9 @@
 #include <iostream>
-#include <math.h>
+#include <regex>
+#include <string>
 
-int main() { std::cout << pow(2, 2) << std::endl; }
+int main() {
+  bool is_valid = std::regex_match(
+      ("foobar"), std::regex(".*foo.*", std::regex_constants::icase));
+  std::cout << "is valid: " << is_valid << std::endl;
+}
