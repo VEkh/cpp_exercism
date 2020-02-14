@@ -1,7 +1,11 @@
 #include <iostream>
-#include <map>
+
+void loop_arrays(int (&arr)[4]);
+
+void loop_arrays(int (&arr)[4]) { std::cout << arr[2] << std::endl; }
 
 int main() {
-  std::map<char, int> map = {{'a', 1}, {'b', 2}};
-  std::cout << static_cast<float>(12) / 12094 << std::endl;
+  int nums[] = {1, 3, 2, 4};
+
+  loop_arrays(nums);
 }
