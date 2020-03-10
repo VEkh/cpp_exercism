@@ -1,4 +1,4 @@
-#include <cmath>
 #include <iostream>
+#include <string>
 
-int main() { std::cout << std::pow(2, 3) << std::endl; }
+int main() { std::cout << std::to_string(10 == 10) << std::endl; }
