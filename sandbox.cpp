@@ -1,11 +1,8 @@
 #include <iostream>
-#include <regex>
-#include <string>
+#include <vector>
 
 int main() {
-  std::string str = "1100101b";
-  std::regex reg("\\D+");
+  std::vector<int> nums = {{1}};
 
-  std::cout << "there's a non-digit? " << std::regex_search(str, reg)
-            << std::endl;
+  std::cout << (nums.size() > 0) << std::endl;
 }
