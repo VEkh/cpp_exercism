@@ -1,15 +1,10 @@
+#include <algorithm>
 #include <iostream>
-#include <regex>
-#include <vector>
+#include <string>
 
 int main() {
-  std::regex open_bracket_regex("\\(|\\[|\\{");
-  std::cout << std::regex_match(std::string(1, '{'), open_bracket_regex)
-            << std::endl;
+  std::string str = "foo";
 
-  std::vector<char> chars;
-  // chars.push_back('a');
-  // chars.push_back('b');
-
-  std::cout << chars.back() << std::endl;
+  std::string::iterator it = std::find(str.begin(), str.end(), 'a');
+  std::cout << (it == str.end()) << std::endl;
 }
