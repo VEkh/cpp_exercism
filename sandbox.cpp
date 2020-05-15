@@ -1,10 +1,9 @@
-#include <algorithm>
 #include <iostream>
+#include <regex>
 #include <string>
 
 int main() {
-  std::string str = "foo";
-
-  std::string::iterator it = std::find(str.begin(), str.end(), 'a');
-  std::cout << (it == str.end()) << std::endl;
+  std::regex reg("\\D");
+  std::string str = "059a";
+  std::cout << std::regex_search(str, reg) << std::endl;
 }
