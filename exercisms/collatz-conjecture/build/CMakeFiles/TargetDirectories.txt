@@ -1,0 +1,4 @@
+/home/vekh/apps/cpp_training/collatz-conjecture/build/CMakeFiles/rebuild_cache.dir
+/home/vekh/apps/cpp_training/collatz-conjecture/build/CMakeFiles/collatz-conjecture.dir
+/home/vekh/apps/cpp_training/collatz-conjecture/build/CMakeFiles/edit_cache.dir
+/home/vekh/apps/cpp_training/collatz-conjecture/build/CMakeFiles/test_collatz-conjecture.dir

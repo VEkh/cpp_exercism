@@ -1,0 +1,4 @@
+/home/vekh/apps/cpp_training/secret-handshake/build/CMakeFiles/edit_cache.dir
+/home/vekh/apps/cpp_training/secret-handshake/build/CMakeFiles/secret-handshake.dir
+/home/vekh/apps/cpp_training/secret-handshake/build/CMakeFiles/rebuild_cache.dir
+/home/vekh/apps/cpp_training/secret-handshake/build/CMakeFiles/test_secret-handshake.dir

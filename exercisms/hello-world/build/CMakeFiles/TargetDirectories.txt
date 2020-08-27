@@ -1,0 +1,4 @@
+/home/vekh/apps/cpp_training/hello-world/build/CMakeFiles/rebuild_cache.dir
+/home/vekh/apps/cpp_training/hello-world/build/CMakeFiles/edit_cache.dir
+/home/vekh/apps/cpp_training/hello-world/build/CMakeFiles/hello-world.dir
+/home/vekh/apps/cpp_training/hello-world/build/CMakeFiles/test_hello-world.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/rna-transcription.dir/rna_transcription_test.cpp.o CMakeFiles/rna-transcription.dir/rna_transcription.cpp.o CMakeFiles/rna-transcription.dir/test/tests-main.cpp.o  -o rna-transcription 

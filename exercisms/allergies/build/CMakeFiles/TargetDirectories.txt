@@ -1,0 +1,4 @@
+/home/vekh/apps/cpp_training/allergies/build/CMakeFiles/rebuild_cache.dir
+/home/vekh/apps/cpp_training/allergies/build/CMakeFiles/edit_cache.dir
+/home/vekh/apps/cpp_training/allergies/build/CMakeFiles/allergies.dir
+/home/vekh/apps/cpp_training/allergies/build/CMakeFiles/test_allergies.dir

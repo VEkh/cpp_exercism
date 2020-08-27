@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/vekh/apps/cpp_training/pascals-triangle/pascals_triangle.cpp
+pascals_triangle.h
+/home/vekh/apps/cpp_training/pascals-triangle/pascals_triangle.h
+vector
+-
+iostream
+-
+
+/home/vekh/apps/cpp_training/pascals-triangle/pascals_triangle.h
+vector
+-
+

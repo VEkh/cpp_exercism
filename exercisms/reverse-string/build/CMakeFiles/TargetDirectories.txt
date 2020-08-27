@@ -1,0 +1,4 @@
+/home/vekh/apps/cpp_training/reverse-string/build/CMakeFiles/rebuild_cache.dir
+/home/vekh/apps/cpp_training/reverse-string/build/CMakeFiles/edit_cache.dir
+/home/vekh/apps/cpp_training/reverse-string/build/CMakeFiles/reverse-string.dir
+/home/vekh/apps/cpp_training/reverse-string/build/CMakeFiles/test_reverse-string.dir

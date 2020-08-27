@@ -1,0 +1,4 @@
+/home/vekh/apps/cpp_training/two-fer/build/CMakeFiles/rebuild_cache.dir
+/home/vekh/apps/cpp_training/two-fer/build/CMakeFiles/edit_cache.dir
+/home/vekh/apps/cpp_training/two-fer/build/CMakeFiles/two-fer.dir
+/home/vekh/apps/cpp_training/two-fer/build/CMakeFiles/test_two-fer.dir

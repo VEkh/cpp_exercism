@@ -1,0 +1,4 @@
+/home/vekh/apps/cpp_training/luhn/build/CMakeFiles/rebuild_cache.dir
+/home/vekh/apps/cpp_training/luhn/build/CMakeFiles/edit_cache.dir
+/home/vekh/apps/cpp_training/luhn/build/CMakeFiles/luhn.dir
+/home/vekh/apps/cpp_training/luhn/build/CMakeFiles/test_luhn.dir

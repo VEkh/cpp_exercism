@@ -1,0 +1,4 @@
+/home/vekh/apps/cpp_training/pascals-triangle/build/CMakeFiles/edit_cache.dir
+/home/vekh/apps/cpp_training/pascals-triangle/build/CMakeFiles/rebuild_cache.dir
+/home/vekh/apps/cpp_training/pascals-triangle/build/CMakeFiles/pascals-triangle.dir
+/home/vekh/apps/cpp_training/pascals-triangle/build/CMakeFiles/test_pascals-triangle.dir

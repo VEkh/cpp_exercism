@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/allergies.dir/allergies_test.cpp.o CMakeFiles/allergies.dir/allergies.cpp.o CMakeFiles/allergies.dir/test/tests-main.cpp.o  -o allergies 

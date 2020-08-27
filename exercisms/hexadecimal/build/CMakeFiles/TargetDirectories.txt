@@ -1,0 +1,4 @@
+/home/vekh/apps/cpp_training/hexadecimal/build/CMakeFiles/rebuild_cache.dir
+/home/vekh/apps/cpp_training/hexadecimal/build/CMakeFiles/hexadecimal.dir
+/home/vekh/apps/cpp_training/hexadecimal/build/CMakeFiles/edit_cache.dir
+/home/vekh/apps/cpp_training/hexadecimal/build/CMakeFiles/test_hexadecimal.dir

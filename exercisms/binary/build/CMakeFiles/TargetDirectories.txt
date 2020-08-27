@@ -1,0 +1,4 @@
+/home/vekh/apps/cpp_training/binary/build/CMakeFiles/rebuild_cache.dir
+/home/vekh/apps/cpp_training/binary/build/CMakeFiles/edit_cache.dir
+/home/vekh/apps/cpp_training/binary/build/CMakeFiles/binary.dir
+/home/vekh/apps/cpp_training/binary/build/CMakeFiles/test_binary.dir

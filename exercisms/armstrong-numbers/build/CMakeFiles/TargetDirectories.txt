@@ -1,0 +1,4 @@
+/home/vekh/apps/cpp_training/armstrong-numbers/build/CMakeFiles/rebuild_cache.dir
+/home/vekh/apps/cpp_training/armstrong-numbers/build/CMakeFiles/armstrong-numbers.dir
+/home/vekh/apps/cpp_training/armstrong-numbers/build/CMakeFiles/edit_cache.dir
+/home/vekh/apps/cpp_training/armstrong-numbers/build/CMakeFiles/test_armstrong-numbers.dir

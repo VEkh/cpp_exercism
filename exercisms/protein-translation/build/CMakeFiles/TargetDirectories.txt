@@ -1,0 +1,4 @@
+/home/vekh/apps/cpp_training/protein-translation/build/CMakeFiles/rebuild_cache.dir
+/home/vekh/apps/cpp_training/protein-translation/build/CMakeFiles/edit_cache.dir
+/home/vekh/apps/cpp_training/protein-translation/build/CMakeFiles/protein-translation.dir
+/home/vekh/apps/cpp_training/protein-translation/build/CMakeFiles/test_protein-translation.dir

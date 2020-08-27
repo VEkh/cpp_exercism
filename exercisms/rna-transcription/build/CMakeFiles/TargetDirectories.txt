@@ -1,0 +1,4 @@
+/home/vekh/apps/cpp_training/rna-transcription/build/CMakeFiles/rebuild_cache.dir
+/home/vekh/apps/cpp_training/rna-transcription/build/CMakeFiles/edit_cache.dir
+/home/vekh/apps/cpp_training/rna-transcription/build/CMakeFiles/rna-transcription.dir
+/home/vekh/apps/cpp_training/rna-transcription/build/CMakeFiles/test_rna-transcription.dir

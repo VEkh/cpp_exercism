@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/vekh/apps/cpp_training/atbash-cipher/atbash_cipher.cpp
+atbash_cipher.h
+/home/vekh/apps/cpp_training/atbash-cipher/atbash_cipher.h
+iostream
+-
+regex
+-
+string
+-
+
+/home/vekh/apps/cpp_training/atbash-cipher/atbash_cipher.h
+string
+-
+

@@ -1,0 +1,4 @@
+/home/vekh/apps/cpp_training/isogram/build/CMakeFiles/rebuild_cache.dir
+/home/vekh/apps/cpp_training/isogram/build/CMakeFiles/edit_cache.dir
+/home/vekh/apps/cpp_training/isogram/build/CMakeFiles/isogram.dir
+/home/vekh/apps/cpp_training/isogram/build/CMakeFiles/test_isogram.dir

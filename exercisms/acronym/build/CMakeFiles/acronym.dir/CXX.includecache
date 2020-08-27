@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/vekh/apps/cpp_training/acronym/acronym.cpp
+acronym.h
+/home/vekh/apps/cpp_training/acronym/acronym.h
+regex
+-
+string
+-
+
+/home/vekh/apps/cpp_training/acronym/acronym.h
+string
+-
+

@@ -1,0 +1,4 @@
+/home/vekh/apps/cpp_training/acronym/build/CMakeFiles/rebuild_cache.dir
+/home/vekh/apps/cpp_training/acronym/build/CMakeFiles/acronym.dir
+/home/vekh/apps/cpp_training/acronym/build/CMakeFiles/edit_cache.dir
+/home/vekh/apps/cpp_training/acronym/build/CMakeFiles/test_acronym.dir
