@@ -1,2 +1,3 @@
+#cmakedefine USE_MYMATH
 #define hottspot_capital_VERSION_MAJOR "@hottspot_capital_VERSION_MAJOR@"
 #define hottspot_capital_VERSION_MINOR "@hottspot_capital_VERSION_MINOR@"

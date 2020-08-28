@@ -1,5 +1,11 @@
+#include <cmath>    // sqrt
+#include <iostream> // std::cout std::endl
+#include <string>   // stod
+
 #include "tutorial_config.h"
-#include <iostream>
+#ifdef USE_MYMATH
+#include "MathFunctions.h"
+#endif
 
 int main(int argc, char *argv[]) {
   if (argc < 2) {
@@ -11,9 +17,15 @@ int main(int argc, char *argv[]) {
     return 1;
   }
 
-  for (int i = 0; i < argc; i++) {
-    std::cout << argv[i] << std::endl;
-  }
+  const double inputValue = std::stod(argv[1]);
 
+#ifdef USE_MYMATH
+  const double outputValue = mysqrt(inputValue);
+#else
+  const double outputValue = sqrt(inputValue);
+#endif
+
+  std::cout << "The square root of " << inputValue << " is " << outputValue
+            << std::endl;
   return 0;
 }
