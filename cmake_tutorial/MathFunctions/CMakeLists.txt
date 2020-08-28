@@ -1,25 +1,16 @@
-include(CheckSymbolExists)
+add_executable(make_table make_table.cpp)
 
-add_library(MathFunctions mysqrt.cpp)
+add_custom_command(
+  OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/table.h
+  COMMAND make_table ${CMAKE_CURRENT_BINARY_DIR}/table.h
+  DEPENDS make_table)
 
-check_symbol_exists(log "math.h" HAVE_LOG)
-check_symbol_exists(exp "math.h" HAVE_EXP)
-if(NOT (HAVE_LOG AND HAVE_EXP))
-  unset(HAVE_LOG CACHE)
-  unset(HAVE_EXP CACHE)
-  set(CMAKE_REQUIRED_LIBRARIES "m")
-  check_symbol_exists(log "math.h" HAVE_LOG)
-  check_symbol_exists(exp "math.h" HAVE_EXP)
-  if(HAVE_LOG AND HAVE_EXP)
-    target_link_libraries(MathFunctions PRIVATE m)
-  endif()
-endif()
+add_library(MathFunctions mysqrt.cpp "${CMAKE_CURRENT_BINARY_DIR}/table.h")
 
-if(HAVE_LOG AND HAVE_EXP)
-  target_compile_definitions(MathFunctions PRIVATE "HAVE_LOG" "HAVE_EXP")
-endif()
-
-target_include_directories(MathFunctions INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(
+  MathFunctions
+  INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}
+  PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
 
 install(TARGETS MathFunctions DESTINATION lib)
 install(FILES MathFunctions.h DESTINATION include)
