@@ -3,6 +3,7 @@
 #include <string>   // stod
 
 #include "tutorial_config.h"
+
 #ifdef USE_MYMATH
 #include "MathFunctions.h"
 #endif
