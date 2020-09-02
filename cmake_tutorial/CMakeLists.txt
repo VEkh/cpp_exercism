@@ -22,8 +22,7 @@ target_include_directories(tutorial PUBLIC "${PROJECT_BINARY_DIR}")
 install(TARGETS tutorial DESTINATION bin)
 install(FILES "${PROJECT_BINARY_DIR}/tutorial_config.h" DESTINATION include)
 
-# Step 4: Tests
-enable_testing()
+include(CTest)
 
 # does the application run
 add_test(NAME Runs COMMAND tutorial 25)
@@ -48,7 +47,7 @@ do_test(tutorial -25 "-25 is [-nan|nan|0]")
 do_test(tutorial 0.0001 "0.0001 is 0.01")
 
 include(InstallRequiredSystemLibraries)
-set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/License.txt")
 set(CPACK_PACKAGE_VERSION_MAJOR "${tutorial_VERSION_MAJOR}")
 set(CPACK_PACKAGE_VERSION_MINOR "${tutorial_VERSION_MINOR}")
+set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/License.txt")
 include(CPack)
