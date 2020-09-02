@@ -5,18 +5,18 @@ project(tutorial VERSION 0.0.1)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-option(USE_MYMATH "Use tutorial provided math implementation" ON)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}")
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}")
+
+option(BUILD_SHARED_LIBS "Build using shared libraries" ON)
 
 configure_file(tutorial_config.h.in tutorial_config.h)
-
-if(USE_MYMATH)
-  add_subdirectory(MathFunctions)
-  list(APPEND EXTRA_LIBS MathFunctions)
-endif()
+add_subdirectory(MathFunctions)
 
 add_executable(tutorial tutorial.cpp)
 
-target_link_libraries(tutorial PUBLIC ${EXTRA_LIBS})
+target_link_libraries(tutorial PUBLIC MathFunctions)
 target_include_directories(tutorial PUBLIC "${PROJECT_BINARY_DIR}")
 
 install(TARGETS tutorial DESTINATION bin)

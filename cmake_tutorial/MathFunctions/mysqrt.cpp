@@ -1,7 +1,10 @@
-#include <iostream> // std::cout, std::endl
+#include <iostream>
 
+#include "MathFunctions.h"
 #include "table.h"
 
+namespace mathfunctions {
+namespace detail {
 double mysqrt(double x) {
   if (x <= 0) {
     return 0;
@@ -21,5 +24,8 @@ double mysqrt(double x) {
     result = result + 0.5 * delta / result;
     std::cout << "Computing sqrt of " << x << " to be " << result << std::endl;
   }
+
   return result;
 }
+} // namespace detail
+} // namespace mathfunctions
