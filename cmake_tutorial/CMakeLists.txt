@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 
 project(tutorial VERSION 0.0.1)
 
+set(CMAKE_DEBUG_POSTFIX d)
 add_library(tutorial_compiler_flags INTERFACE)
 target_compile_features(tutorial_compiler_flags INTERFACE cxx_std_11)
 
@@ -23,6 +24,7 @@ configure_file(tutorial_config.h.in tutorial_config.h)
 add_subdirectory(MathFunctions)
 
 add_executable(tutorial tutorial.cpp)
+set_target_properties(tutorial PROPERTIES DEBUG_POSTFIX ${CMAKE_DEBUG_POSTFIX})
 
 target_link_libraries(tutorial PUBLIC MathFunctions)
 target_include_directories(tutorial PUBLIC "${PROJECT_BINARY_DIR}")

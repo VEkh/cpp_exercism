@@ -1,6 +1,9 @@
 add_library(MathFunctions MathFunctions.cpp
                           "${CMAKE_CURRENT_BINARY_DIR}/table.h")
 
+set_property(TARGET MathFunctions PROPERTY VERSION "1.0.0")
+set_property(TARGET MathFunctions PROPERTY SOVERSION "1")
+
 target_include_directories(
   MathFunctions INTERFACE $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
                           $<INSTALL_INTERFACE:include>)
