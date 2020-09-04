@@ -2,12 +2,14 @@ add_library(MathFunctions MathFunctions.cpp
                           "${CMAKE_CURRENT_BINARY_DIR}/table.h")
 
 target_include_directories(MathFunctions INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
+target_link_libraries(MathFunctions PUBLIC tutorial_compiler_flags)
 
 option(USE_MYMATH "Use tutorial provided math implementation" ON)
 
 if(USE_MYMATH)
   target_compile_definitions(MathFunctions PRIVATE "USE_MYMATH")
   add_executable(make_table make_table.cpp)
+  target_link_libraries(make_table PRIVATE tutorial_compiler_flags)
 
   add_custom_command(
     OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/table.h
@@ -16,6 +18,7 @@ if(USE_MYMATH)
 
   add_library(SqrtLibrary mysqrt.cpp ${CMAKE_CURRENT_BINARY_DIR}/table.h)
   target_include_directories(SqrtLibrary PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
+  target_link_libraries(SqrtLibrary PRIVATE tutorial_compiler_flags)
   set_target_properties(SqrtLibrary PROPERTIES POSITION_INDEPENDENT_CODE
                                                ${BUILD_SHARED_LIBS})
   target_link_libraries(MathFunctions PRIVATE SqrtLibrary)
