@@ -29,7 +29,6 @@ target_include_directories(tutorial PUBLIC "${PROJECT_BINARY_DIR}")
 
 install(TARGETS tutorial DESTINATION bin)
 install(FILES "${PROJECT_BINARY_DIR}/tutorial_config.h" DESTINATION include)
-
 include(CTest)
 
 # does the application run
@@ -59,3 +58,25 @@ set(CPACK_PACKAGE_VERSION_MAJOR "${tutorial_VERSION_MAJOR}")
 set(CPACK_PACKAGE_VERSION_MINOR "${tutorial_VERSION_MINOR}")
 set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/License.txt")
 include(CPack)
+
+install(
+  EXPORT MathFunctionsTargets
+  FILE MathFunctionsTargets.cmake
+  DESTINATION "lib/cmake/MathFunctions")
+
+include(CMakePackageConfigHelpers)
+configure_package_config_file(
+  ${CMAKE_CURRENT_SOURCE_DIR}/Config.cmake.in
+  "${CMAKE_CURRENT_BINARY_DIR}/MathFunctionsConfig.cmake" INSTALL_DESTINATION
+  "lib/cmake/example" NO_SET_AND_CHECK_MACRO NO_CHECK_REQUIRED_COMPONENTS_MACRO)
+
+write_basic_package_version_file(
+  "${CMAKE_CURRENT_BINARY_DIR}/MathFunctionsConfigVersion.cmake"
+  VERSION "${tutorial_VERSION_MAJOR}.${tutorial_VERSION_MINOR}"
+  COMPATIBILITY AnyNewerVersion)
+
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/MathFunctionsConfig.cmake
+        DESTINATION "lib/cmake/MathFunctions")
+
+export(EXPORT MathFunctionsTargets
+       FILE "${CMAKE_CURRENT_BINARY_DIR}/MathFunctionsTargets.cmake")
